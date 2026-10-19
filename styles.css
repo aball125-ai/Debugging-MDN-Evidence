@@ -10,7 +10,8 @@ body {
 
 header,
 main {
-  width: 960px;
+  width: 100%;
+  max-width: 960px;
   margin-inline: auto;
 }
 
@@ -26,7 +27,7 @@ nav {
 }
 
 a:focus {
-  outline: none;
+  outline: 2px solid;
 }
 
 main {
@@ -45,7 +46,7 @@ main {
 
 .cards {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: repeat(3,minmax(0, 1fr));
   gap: 1rem;
   margin-top: 2rem;
 }
